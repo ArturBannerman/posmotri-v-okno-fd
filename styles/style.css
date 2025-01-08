@@ -87,8 +87,8 @@ ol {
   flex-direction: column;
   position: relative;
   overflow: auto;
-  max-width: 399px;
-  max-height: 534px;
+  inline-size: 399px;
+  block-size: 298px;
   gap: 30px;
 }
 
@@ -99,8 +99,6 @@ ol {
 .content__details {
   inline-size: 100%;
   align-self: center;
-  overflow: hidden;
-  margin-top: 232px;
 }
 
 .content__card-link {
@@ -189,7 +187,7 @@ ol {
   -webkit-line-clamp: 4;
   line-clamp: 4;
   overflow: hidden;
-  line-height: 150%;
+  line-height: 16.2px;
 }
 
 .content__video-card-thumbnail {
@@ -229,16 +227,6 @@ ol {
   width: 19px;
 }
 
-.search-form__pseudo-checkbox:active {
-  outline: 1px solid rgba(255,255,255,1);
-  outline-offset: 1px;
-}
-
-.search-form__checkbox:focus-visible {
-  outline: 1px solid rgba(255,255,255,1);
-  outline-offset: 1px;
-}
-
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   width: 15px;
   height: 15px;
@@ -258,10 +246,6 @@ ol {
   display: flex;
   align-items: center;
   width: fit-content;
-}
-
-.search-form__label:focus {
-  outline: none;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -294,11 +278,6 @@ ol {
 
 .search-form__textfield:focus {
   outline: none;
-}
-
-.search-form__textfield:has(:focus-visible) {
-  outline: 1px solid rgba(255,255,255,1);
-  outline-offset: -1px;
 }
 
 .search-form__textfield:active {
