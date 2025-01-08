@@ -229,7 +229,6 @@ ol {
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  position: absolute;
   width: 15px;
   height: 15px;
   content: '';
